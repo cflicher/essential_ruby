@@ -6,7 +6,6 @@ numbers.each do |the_number|
   puts the_number * the_number
 end
 
-
 rb = { "first_name" => "Raghu",     "last_name" => "Betina" }
 av = { "first_name" => "Arjun",     "last_name" => "Venkataswamy" }
 dy = { "first_name" => "Dan",       "last_name" => "Yu" }

@@ -88,3 +88,16 @@ end
 
 # Note: big difference between the assignment operator (=) and the equivalence
 #   comparison (==)
+
+# So far, the data types we've seen are: String, Fixnum (integers), Float
+#  (decimal numbers), and Boolean (true or false). One other very common data
+#  type we'll work with is Symbol. A Symbol is just like a String -- a sequence
+#  of characters -- but simpler. You can't have spaces, capital letters, or
+#  punctuation in them -- in fact, they follow the same rules as variable names:
+
+:first_name
+:last_name
+:occupation
+
+# We use them mainly as identifiers within our code; they are not meant to hold
+#   user-facing data like Strings, so they lack methods like `capitalize`.
