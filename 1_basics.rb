@@ -9,19 +9,34 @@ last = "BETINA"
 # The essential pattern in Ruby:
 #   variable = object.method
 
-capitalized_first = first.capitalize
-capitalized_last = last.capitalize
-
 # The method that follows the dot must exist *for whatever class the object on
-#   the left belongs to*
+#   the left belongs to*. It's crucial that you CONSTANTLY ask yourself,
+#   "What class is the object on the left side a member of? What methods can
+#   members of that class perform?"
+
+formatted_first = first.capitalize
+formatted_last = last.capitalize
+
+# This works because the variables `first` and `last` contain Strings, which can
+#   capitalize themselves.
 
 # Some methods take inputs, called 'arguments':
 
-first = capitalized_first.gsub(" ", "")
-last = capitalized_last.gsub(" ", "")
+sanitized_first = formatted_first.gsub(" ", "")
+sanitized_last = formatted_last.gsub(" ", "")
 
-# Also note that we can re-use existing variables; it just throws away
-#   whatever value was there before and replaces it.
+# The `gsub` (which stands for global substitution) method finds all occurrences
+#  of the first argument in the string and replaces each with the second
+#  argument. In this case, we're using gsub to find all spaces and replace them
+#  with... nothing. In other words, we're removing all spaces.
+
+# Now that we're done processing our strings, let's replace the originals:
+
+first = sanitized_first
+last = sanitized_last
+
+# Note that we can re-use existing variables; it just throws away whatever value
+#   was in it before and replaces it.
 
 # We can add strings together, called 'concatenating':
 
@@ -73,4 +88,3 @@ end
 
 # Note: big difference between the assignment operator (=) and the equivalence
 #   comparison (==)
-

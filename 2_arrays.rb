@@ -1,7 +1,7 @@
 # Arrays
 
 # Creating Arrays
-instructors = ["Raghu", "Arjun", "Dan"]
+instructors = ["Don", "Ben", "Arjun", "Raghu"]
 students = ["Jocelyn", "Arthur", "Tom", "Lindsey"]
 
 # Accessing data from Arrays (use an index):
@@ -12,3 +12,8 @@ puts "The second student is #{students[1]}."
 students.push("Roz")
 
 puts "The last student is #{students.last}."
+
+# Looping through elements of an Array:
+instructors.each do |instructor|
+  puts "#{instructor} is an Instructor."
+end
