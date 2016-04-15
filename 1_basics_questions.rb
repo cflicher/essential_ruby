@@ -1,3 +1,6 @@
+# Note: this file intentionally contains bugs, so if you run it, it will break.
+#   Just try to read it and answer the questions yourself.
+
 # ==============================================================================
 
 x = 2
